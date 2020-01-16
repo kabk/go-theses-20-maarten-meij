@@ -11,6 +11,15 @@ html {
   scroll-behavior: smooth;
 }
 
+
+@font-face {
+  font-family: 'FlatironITCTT';
+  src: url('FlatironITCTT.eot?#iefix') format('embedded-opentype'),  url('FlatironITCTT.woff') format('woff'), url('FlatironITCTT.ttf')  format('truetype'), url('FlatironITCTT.svg#FlatironITCTT') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* -------------------CONTAINERS------------------- */
 body {
   color: white;
