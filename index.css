@@ -165,6 +165,10 @@ span {
   text-decoration-color: black;
   text-transform: uppercase;
 }
+#refs a {
+  text-decoration-color: black;
+  text-transform: uppercase;
+}
 
 .intro {
   color: #bcae9a;
