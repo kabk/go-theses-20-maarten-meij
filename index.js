@@ -18,7 +18,7 @@ var tapBool = true
 
 //IMAGE PRELOAD------------------------------------------
 if (document.images) {
-  for (var i = 0; i < 432; i++) {
+  for (var i = 0; i < 360; i++) {
     if(i<10){
       zerosI = "0000"
     }
@@ -50,7 +50,7 @@ function scrollFadeIn(){
 }
 function updateBg(){
   $('#progress').css('height', barHeight)
-  bgN = Math.floor(progress * 432)
+  bgN = Math.floor(progress * 350)
   if(bgN<10){
     zeros = "0000"
   }
