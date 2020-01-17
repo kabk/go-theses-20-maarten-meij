@@ -32,8 +32,8 @@ if (document.images) {
 function scrollFadeOut(){
   console.log("fadeout")
   scrollCounter = 0
-  $('#backgroundDiv').animate({opacity: 0.2}, 2000)
-  $('.text').animate({opacity: 1}, 2000)
+  $('#backgroundDiv').animate({opacity: 0.2}, 500)
+  $('.text').animate({opacity: 1}, 500)
 
 }
 function scrollFadeIn(){
@@ -65,7 +65,7 @@ $(window).scroll(function() {
   updateBg()
   if(scrollCounter == 1){scrollFadeIn()}
   clearTimeout(timer)
-  timer = setTimeout(scrollFadeOut, 500)
+  timer = setTimeout(scrollFadeOut, 600)
 
 
 });
