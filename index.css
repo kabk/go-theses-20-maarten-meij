@@ -48,6 +48,7 @@ body {
   height: 0px;
   width: 10px;
   background-color: #bcae9a;
+  z-index: 9999;
 }
 
 ul {
@@ -70,6 +71,8 @@ img {
   top: 0px;
   left: 0px;
   background-color: #bcae9a;
+  z-index: 9999;
+
 }
 
 .barrr {
@@ -95,6 +98,8 @@ img {
   padding: 60px;
   left: -100vw;
   overflow-y: scroll;
+  z-index: 9999;
+
 }
 
 #refs {
@@ -105,6 +110,8 @@ img {
   padding: 60px;
   right: -100vw;
   overflow-y: scroll;
+  z-index: 9999;
+
 }
 
 /* -------------------TYPE-------------------------- */

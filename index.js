@@ -15,6 +15,7 @@ var fadeOutTime = 200
 var timeOutTime = 400
 var tapBool = true
 
+
 //IMAGE PRELOAD------------------------------------------
 if (document.images) {
   for (var i = 0; i < 432; i++) {
@@ -45,7 +46,7 @@ function scrollFadeIn(){
     $("#backgroundDiv").finish();
     $(".text").finish();
     $('#backgroundDiv').animate({opacity: 1}, fadeInTime)
-    $('.text').animate({opacity: 0.4}, fadeInTime)
+    $('.text').animate({opacity: 0.1}, fadeInTime)
 }
 function updateBg(){
   $('#progress').css('height', barHeight)
