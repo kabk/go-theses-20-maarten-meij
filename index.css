@@ -183,6 +183,7 @@ span {
 
 #navi a {
   text-decoration-color: black;
+  color:black;
   /* text-transform: uppercase; */
 }
 #refs a {
