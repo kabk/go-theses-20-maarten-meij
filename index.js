@@ -13,6 +13,7 @@ var zerosI = "0000"
 var fadeInTime = 200
 var fadeOutTime = 200
 var timeOutTime = 400
+var tapBool = true
 
 //IMAGE PRELOAD------------------------------------------
 if (document.images) {
@@ -67,11 +68,28 @@ $(window).scroll(function() {
   progress = scrollPos / (docHeight - vheight)
   barHeight = progress * vheight
   updateBg()
-  if(scrollCounter == 1){scrollFadeIn()}
-  clearTimeout(timer)
-  timer = setTimeout(scrollFadeOut, timeOutTime)
+  // if(scrollCounter == 1){scrollFadeIn()}
+  // clearTimeout(timer)
+  // timer = setTimeout(scrollFadeOut, timeOutTime)
 
 
+});
+
+
+//TAP INTERACTION ===================================
+$('.text').on('click tap', function() {
+    if(tapBool == true){
+      scrollFadeIn()
+      tapBool = false
+      console.log("bgON")
+    }
+    else{
+      scrollFadeOut()
+      tapBool = true
+      console.log("bgOFF")
+
+    }
+    console.log("taptap")
 });
 
 //sidebars------------------------------------------
