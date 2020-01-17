@@ -129,6 +129,18 @@ h2 {
   font-weight: normal !important;
   text-transform: uppercase;
 }
+h3{
+  font-size:30px;
+  position:absolute;
+  bottom:50px;
+  /* left:0px; */
+  font-weight: lighter;
+  font-style: italic;
+  color: grey;
+
+  /* width:100vw; */
+  /* text-align: center; */
+}
 
 p {
   font-size: 30px;

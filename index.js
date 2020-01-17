@@ -38,7 +38,7 @@ if (document.images) {
 function scrollFadeOut(){
   console.log("fadeout")
   scrollCounter = 0
-  $('#backgroundDiv').animate({opacity: 0.4}, fadeOutTime)
+  $('#backgroundDiv').animate({opacity: 0.2}, fadeOutTime)
   $('.text').animate({opacity: 1}, fadeOutTime)
 
 }
