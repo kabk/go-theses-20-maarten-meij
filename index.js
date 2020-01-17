@@ -10,6 +10,10 @@ var timer;
 var zeros
 var zerosI = "0000"
 
+var fadeInTime = 200
+var fadeOutTime = 200
+var timeOutTime = 400
+
 //IMAGE PRELOAD------------------------------------------
 if (document.images) {
   for (var i = 0; i < 432; i++) {
@@ -32,15 +36,15 @@ if (document.images) {
 function scrollFadeOut(){
   console.log("fadeout")
   scrollCounter = 0
-  $('#backgroundDiv').animate({opacity: 0.2}, 500)
-  $('.text').animate({opacity: 1}, 500)
+  $('#backgroundDiv').animate({opacity: 0.4}, fadeOutTime)
+  $('.text').animate({opacity: 1}, fadeOutTime)
 
 }
 function scrollFadeIn(){
     $("#backgroundDiv").finish();
     $(".text").finish();
-    $('#backgroundDiv').animate({opacity: 1}, 500)
-    $('.text').animate({opacity: 0.2}, 500)
+    $('#backgroundDiv').animate({opacity: 1}, fadeInTime)
+    $('.text').animate({opacity: 0.4}, fadeInTime)
 }
 function updateBg(){
   $('#progress').css('height', barHeight)
@@ -65,7 +69,7 @@ $(window).scroll(function() {
   updateBg()
   if(scrollCounter == 1){scrollFadeIn()}
   clearTimeout(timer)
-  timer = setTimeout(scrollFadeOut, 600)
+  timer = setTimeout(scrollFadeOut, timeOutTime)
 
 
 });
