@@ -79,17 +79,20 @@ $(window).scroll(function() {
 
 //TAP INTERACTION ===================================
 $('.text').on('click tap', function() {
-    if(tapBool == true){
-      scrollFadeIn()
-      tapBool = false
-      console.log("bgON")
-    }
-    else{
-      scrollFadeOut()
-      tapBool = true
-      console.log("bgOFF")
+    console.log(event.target.id)
+    if(event.target.id != "ref01" ){
+      if(tapBool == true){
+        scrollFadeIn()
+        tapBool = false
+        console.log("bgON")
+      }
+      else{
+        scrollFadeOut()
+        tapBool = true
+        console.log("bgOFF")
 
-    }
+      }
+  }
     console.log("taptap")
 });
 

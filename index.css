@@ -17,7 +17,7 @@ body {
   color: white;
   font-family: georgia;
   font-weight: normal !important;
-  background-color: black;
+  background-color: #111;
 }
 
 #backgroundDiv {
@@ -111,6 +111,10 @@ img {
   right: -100vw;
   overflow-y: scroll;
   z-index: 9999;
+  background-image: url('img/exit.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100px 100px;
 
 }
 
@@ -155,10 +159,10 @@ p {
 }
 
 li {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: normal !important;
   margin-bottom: 60px;
-  margin-left: -40px;
+  /* margin-left: -40px; */
 }
 
 #refs li {
@@ -175,9 +179,9 @@ a {
 }
 
 span {
-  color: white;
+  color: #bcae9a;
   font-weight: normal !important;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-decoration-color: #bcae9a;
 }
 
@@ -198,4 +202,8 @@ span {
   font-size: 15px;
   color: grey;
   font-style: italic;
+}
+.quotes{
+  font-style: italic;
+  margin-left: 40px;
 }
